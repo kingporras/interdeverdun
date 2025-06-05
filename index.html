@@ -1,254 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inter de Verdun - Sitio Oficial</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inter de Verdun</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-  <div class="header-content">
-    <div class="logo-container">
-      <div class="logo">🦁</div>
-      <div>
+    <header>
         <h1>Inter de Verdun</h1>
-        <p class="motto">Fuerza y honor <span class="ball">⚽</span></p>
-      </div>
-    </div>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-    </div>
-  </div>
-</header>
+        <p>Fuerza y honor</p>
+    </header>
 
-<nav>
-  <div class="nav-container">
-    <a href="#" class="active">Inicio</a>
-    <a href="#team">Plantilla</a>
-    <a href="#league">Liga</a>
-    <a href="#matches">Partidos</a>
-    <a href="#news">Noticias</a>
-    <a href="#contact">Contacto</a>
-  </div>
-</nav>
-
-<main>
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Bienvenidos al Inter de Verdun</h2>
-      <p>Orgullo de barrio. Equipo, pasión y hermandad.</p>
-      <button class="cta-button">Próximo Partido</button>
-    </div>
-  </section>
-
-  <!-- Sección de la Liga -->
-  <section id="league" class="league-section">
-    <h2><i class="fas fa-trophy"></i> Liga Municipal de Fútbol 7</h2>
-    
-    <div class="league-info">
-      <div class="info-card">
-        <i class="fas fa-calendar-alt"></i>
-        <h3>Temporada 2024-2025</h3>
-        <p>12 equipos | 22 jornadas</p>
-      </div>
-      
-      <div class="info-card">
-        <i class="fas fa-map-marker-alt"></i>
-        <h3>Campo Municipal</h3>
-        <p>C/ del Deporte, 12, Verdun</p>
-      </div>
-      
-      <div class="info-card">
-        <i class="fas fa-link"></i>
-        <h3>Web Oficial</h3>
-        <a href="https://www.ligamunicipalverdun.es" target="_blank">ligamunicipalverdun.es</a>
-      </div>
-    </div>
-    
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab('standings')">Clasificación</button>
-      <button class="tab-button" onclick="openTab('calendar')">Calendario</button>
-      <button class="tab-button" onclick="openTab('results')">Resultados</button>
-    </div>
-    
-    <div id="standings" class="tab-content active">
-      <table class="league-table">
-        <thead>
-          <tr>
-            <th>Pos</th>
-            <th>Equipo</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
-            <th>GF</th>
-            <th>GC</th>
-            <th>Pts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td class="highlight">Inter de Verdun</td>
-            <td>8</td>
-            <td>7</td>
-            <td>1</td>
-            <td>0</td>
-            <td>32</td>
-            <td>8</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Los Tigres</td>
-            <td>8</td>
-            <td>6</td>
-            <td>1</td>
-            <td>1</td>
-            <td>28</td>
-            <td>12</td>
-            <td>19</td>
-          </tr>
-          <!-- Más filas... -->
-        </tbody>
-      </table>
-    </div>
-    
-    <div id="calendar" class="tab-content">
-      <div class="match-day">
-        <h3>Jornada 9 - 15/06/2024</h3>
-        <div class="match">
-          <span class="time">18:30</span>
-          <span class="teams">Inter de Verdun vs Los Tigres</span>
-          <span class="place">Campo 1</span>
+    <section id="convocatoria">
+        <h2>Convocatoria</h2>
+        <div class="convocatoria-bloque">Cargando convocatoria...
+            <h3>TITULARES</h3>
+            <ul>
+                <li><strong>99 MORDILLO</strong> (El Puma de Verdun)</li>
+                <li><strong>2 POMS</strong> (El rubio)</li>
+                <li><strong>25 RAÚL</strong> (american stanford)</li>
+                <li><strong>98 VILLA</strong> (Elrubiopatapalo)</li>
+                <li><strong>10 DANI</strong> (D10S)</li>
+                <li><strong>5 ARM</strong> (ODOVon)</li>
+                <li><strong>69 DELRIO JR</strong></li>
+            </ul>
+            <h3>SUPLENTES</h3>
+            <ul>
+                <li><strong>E77 PABS</strong></li>
+                <li><strong>69 SALO</strong></li>
+                <li><strong>14 ALAN</strong></li>
+            </ul>
+            <p><strong>DT:</strong> DLF</p>
+            <p><strong>PRESIDENTE:</strong> EL PORRAS DE VERDUN</p>
+            <div class="lema">FUERZA Y HONOR</div>
         </div>
-      </div>
-      
-      <div class="match-day">
-        <h3>Jornada 10 - 22/06/2024</h3>
-        <div class="match">
-          <span class="time">12:00</span>
-          <span class="teams">Rayo Verdun vs Inter de Verdun</span>
-          <span class="place">Campo 2</span>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería Multimedia</h2>
+        <div class="galeria-fotos">
+            <img src="assets/gallery/foto1.jpg" alt="Foto del equipo 1">
+            <img src="assets/gallery/foto2.jpg" alt="Foto del equipo 2">
+            <img src="assets/gallery/foto3.jpg" alt="Foto del equipo 3">
         </div>
-      </div>
-      <!-- Más jornadas... -->
-    </div>
-    
-    <div id="results" class="tab-content">
-      <div class="result">
-        <div class="result-teams">
-          <span class="team">Inter de Verdun</span>
-          <span class="score">4 - 1</span>
-          <span class="team">Atlético Pueblo</span>
+        <div class="galeria-videos">
+            <h3>Vídeos destacados</h3>
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/1G4isv_Fylg" frameborder="0" allowfullscreen></iframe>
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/Xp2l9lm7X7A" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="result-info">
-          <span>Jornada 8 - 08/06/2024</span>
-          <span>Goles: Mordí (2), Suvillika, Delrio</span>
-        </div>
-      </div>
-      
-      <div class="result">
-        <div class="result-teams">
-          <span class="team">Los Leones</span>
-          <span class="score">2 - 2</span>
-          <span class="team">Inter de Verdun</span>
-        </div>
-        <div class="result-info">
-          <span>Jornada 7 - 01/06/2024</span>
-          <span>Goles: Dani, Xavi</span>
-        </div>
-      </div>
-      <!-- Más resultados... -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Resto de secciones (plantilla, próximos partidos, etc.) -->
-  <!-- ... -->
-
-</main>
-
-<footer id="contact">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Contacto</h3>
-      <p><i class="fas fa-envelope"></i> info@interverdun.com</p>
-      <p><i class="fas fa-phone"></i> +34 612 345 678</p>
-    </div>
-    
-    <div class="footer-section">
-      <h3>Enlaces</h3>
-      <a href="#">Liga Municipal</a>
-      <a href="#">Normativas</a>
-      <a href="#">Federación</a>
-    </div>
-    
-    <div class="footer-section">
-      <h3>Patrocinadores</h3>
-      <div class="sponsors">
-        <img src="https://via.placeholder.com/80x40?text=Patrocinador1" alt="Patrocinador 1">
-        <img src="https://via.placeholder.com/80x40?text=Patrocinador2" alt="Patrocinador 2">
-      </div>
-    </div>
-  </div>
-  
-  <div class="copyright">
-    © 2025 Inter de Verdun. Todos los derechos reservados.
-  </div>
-</footer>
-
-<script>
-  function openTab(tabName) {
-    const tabContents = document.getElementsByClassName("tab-content");
-    for (let i = 0; i < tabContents.length; i++) {
-      tabContents[i].classList.remove("active");
-    }
-    
-    const tabButtons = document.getElementsByClassName("tab-button");
-    for (let i = 0; i < tabButtons.length; i++) {
-      tabButtons[i].classList.remove("active");
-    }
-    
-    document.getElementById(tabName).classList.add("active");
-    event.currentTarget.classList.add("active");
-  }Inter de Verdun
-
-Fuerza y honor
-
-Convocatoria
-
-Cargando convocatoria...
-TITULARES
-
-99 MORDILLO (El Puma de Verdun)
-2 POMS (El rubio)
-25 RAÚL (american stanford)
-98 VILLA (Elrubiopatapalo)
-10 DANI (D10S)
-5 ARM (ODOVon)
-69 DELRIO JR
-SUPLENTES
-
-E77 PABS
-69 SALO
-14 ALAN
-DT: DLF
-
-PRESIDENTE: EL PORRAS DE VERDUN
-
-FUERZA Y HONOR
-Galería Multimedia
-
-Foto del equipo 1  Foto del equipo 2  Foto del equipo 3
-Vídeos destacados
-
- 
-</script>
-
+    <footer>
+        <p>&copy; 2025 Inter de Verdun</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
