@@ -1,40 +1,151 @@
+/* styles.css - Parte adicional para las nuevas secciones */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e6f0f3;
-  color: #222;
+/* Estilos para la sección de liga */
+.league-section {
+  background-color: var(--white);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 1200px;
 }
-header {
-  background-color: #0099cc;
-  color: white;
-  padding: 20px;
+
+.league-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
   text-align: center;
 }
-h1 {
-  margin: 0;
+
+.info-card i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
 }
-nav {
-  background-color: #005f73;
-  color: white;
+
+/* Pestañas */
+.tabs {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 10px 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--light);
 }
-nav a {
-  color: white;
-  text-decoration: none;
+
+.tab-button {
+  padding: 0.8rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   font-weight: bold;
+  color: var(--dark);
+  position: relative;
 }
-section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+
+.tab-button.active {
+  color: var(--primary);
 }
-footer {
-  background-color: #005f73;
-  color: white;
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+}
+
+/* Contenido de pestañas */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Tabla de clasificación */
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.league-table th, .league-table td {
+  padding: 0.8rem;
   text-align: center;
-  padding: 15px;
+  border-bottom: 1px solid var(--light);
+}
+
+.league-table th {
+  background-color: var(--primary);
+  color: white;
+}
+
+.league-table tr:nth-child(even) {
+  background-color: var(--light);
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Calendario y resultados */
+.match-day {
+  margin-bottom: 1.5rem;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--light);
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.result {
+  background: var(--light);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.result-teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.result-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .league-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .match, .result-teams {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
