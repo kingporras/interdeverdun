@@ -1,1 +1,63 @@
-<!DOCTYPE html><html><head><title>Inter de Verdun</title></head><body><h1>Web en construcción con funciones completas en camino</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inter de Verdun</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="escudo.png"/>
+</head>
+<body>
+  <header>
+    <h1>Inter de Verdun</h1>
+    <p>Fuerza y honor</p>
+  </header>
+
+  <section id="formacion">
+    <h2>Formación táctica (2-3-1)</h2>
+    <div id="campo">
+      <div class="jugador" contenteditable="true">99 Mordí</div>
+      <div class="jugador" contenteditable="true">2 Pomares</div>
+      <div class="jugador" contenteditable="true">7 Suvillika</div>
+      <div class="jugador" contenteditable="true">10 Dani</div>
+      <div class="jugador" contenteditable="true">15 Xavi</div>
+      <div class="jugador" contenteditable="true">4 El Porras</div>
+    </div>
+  </section>
+
+  <section id="calendario">
+    <h2>Calendario</h2>
+    <ul>
+      <li><a href="https://apuntamelo.com/grupo/2/504/2/1847/0" target="_blank">Partidos Inter de Verdun A</a></li>
+      <li><a href="https://apuntamelo.com/grupo/2/588/2/2434/0" target="_blank">Partidos Inter de Verdun B</a></li>
+    </ul>
+  </section>
+
+  <section id="convocatorias">
+    <h2>Convocatorias</h2>
+    <textarea id="convocatoriaInput" placeholder="Escribe aquí la convocatoria..."></textarea>
+    <button onclick="guardarConvocatoria()">Guardar (solo admin)</button>
+  </section>
+
+  <section id="mvp">
+    <h2>Votación MVP</h2>
+    <input type="text" id="nombreMVP" placeholder="Jugador MVP"/>
+    <button onclick="votarMVP()">Votar</button>
+    <p id="mvpResultado"></p>
+  </section>
+
+  <section id="historial">
+    <h2>Historial de Partidos</h2>
+    <ul id="listaHistorial">
+      <li>31/05: Inter 6 - 4 CF Valldaura | Goles: Porras(4), Pomares(2) | MVP: Porras</li>
+    </ul>
+  </section>
+
+  <section id="frases">
+    <h2>Frase Motivadora</h2>
+    <blockquote id="fraseMotivadora">"La fuerza no proviene de la victoria, sino del esfuerzo constante."</blockquote>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

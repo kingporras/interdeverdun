@@ -1,15 +1,13 @@
+# Inter de Verdun
 
-# 🌍 Inter de Verdun – Web Oficial
+Sitio oficial del equipo Inter de Verdun.
 
-Web del equipo de fútbol 7 de Barcelona **Inter de Verdun**.
+## Funcionalidades
+- Calendario
+- Convocatorias
+- Formación táctica
+- MVP
 
-🟢 Funcionalidades:
-- Convocatorias dinámicas
-- Titulares en campo táctico 2-3-1
-- Fichas de jugadores
-- Calendario y resultados de Apúntamelo
-- Votación MVP por jornada
-- Frases motivadoras automáticas
-- App móvil (PWA)
-
-🦁 Fuerza y honor | @interdeverdunbcn
+## Enlaces útiles
+- [Liga A](https://apuntamelo.com/grupo/2/504/2/1847/0)
+- [Liga B](https://apuntamelo.com/grupo/2/588/2/2434/0)

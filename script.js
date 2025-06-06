@@ -1,0 +1,1 @@
+console.log('Inter de Verdun site loaded');
