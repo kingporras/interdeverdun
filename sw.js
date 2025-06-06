@@ -3,11 +3,11 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('interdeverdun-cache').then(function(cache) {
             return cache.addAll([
-                '/',
-                '/index.html',
-                '/assets/styles.css',
-                '/app.js',
-                '/manifest.json'
+                './',
+                './index.html',
+                './assets/styles.css',
+                './app.js',
+                './manifest.json'
             ]);
         })
     );

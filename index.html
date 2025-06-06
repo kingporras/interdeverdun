@@ -7,6 +7,7 @@
     <title>Inter de Verdun</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="manifest" href="manifest.json">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,13 +33,12 @@
 
         <section class="liga">
             <h2>Calendario y Clasificación</h2>
-            <p><a href="https://apuntamelo.com/grupo/2/504/2/1847/0" target="_blank">🅰️ Inter de Verdun A - Ver en Apúntamelo</a></p>
-            <p><a href="https://apuntamelo.com/grupo/2/588/2/2434/0" target="_blank">🅱️ Inter de Verdun B - Ver en Apúntamelo</a></p>
+            <p><a href="https://apuntamelo.com/grupo/2/504/2/1847/0" target="_blank">🅰️ Inter de Verdun A</a></p>
+            <p><a href="https://apuntamelo.com/grupo/2/588/2/2434/0" target="_blank">🅱️ Inter de Verdun B</a></p>
         </section>
 
         <section class="alineaciones">
             <h2>Mejores Alineaciones</h2>
-            <p>Formación 2-3-1 habitual con rotaciones. Se destacan:</p>
             <ul>
                 <li>🔝 El Porras (Delantero)</li>
                 <li>🧠 Suvillika (Medio)</li>
@@ -52,34 +52,27 @@
             <p><strong>Asistencias:</strong> Adri (4), Dani (3), Sofo (2)</p>
         </section>
 
-        <section class="equipo">
-            <h2>Inter de Verdun B</h2>
-            <p>Sección dedicada al equipo B. Pronto más detalles, convocatorias y noticias.</p>
+        <section class="convocatoria">
+            <h2>Convocatoria</h2>
+            <textarea id="convocatoriaText" placeholder="Escribe la convocatoria aquí..."></textarea>
+            <button onclick="guardarConvocatoria()">Guardar</button>
+            <div id="convocatoriaPreview"></div>
         </section>
-    
-    <section class="convocatoria">
-        <h2>Convocatoria</h2>
-        <textarea id="convocatoriaText" placeholder="Escribe la convocatoria aquí..."></textarea>
-        <button onclick="guardarConvocatoria()">Guardar</button>
-        <div id="convocatoriaPreview"></div>
-    </section>
 
-    <section class="app-movil">
-        <h2>📱 Instala la App</h2>
-        <p>Agrega esta web a tu pantalla de inicio desde el navegador para instalarla como app.</p>
-        <button onclick="promptInstalacion()">Instalar App</button>
-    </section>
+        <section class="app-movil">
+            <h2>📱 Instala la App</h2>
+            <p>Agrega esta web a tu pantalla de inicio desde el navegador para instalarla como app.</p>
+            <button onclick="promptInstalacion()">Instalar App</button>
+        </section>
 
-    <section class="instagram">
-        <h2>📸 Síguenos en Instagram</h2>
-        <p><a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
-    </section>
+        <section class="instagram">
+            <h2>📸 Instagram</h2>
+            <p><a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
+        </section>
     </main>
-    
 
     <footer>
         <p>© 2025 Inter de Verdun | Fuerza y honor</p>
     </footer>
-    <script src="app.js"></script>
 </body>
 </html>
