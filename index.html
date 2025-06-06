@@ -2,59 +2,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inter de Verdun</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
         <h1>Inter de Verdun</h1>
-        <p>Fuerza y honor</p>
+        <p class="subtitulo">Fuerza y honor - Fútbol 7 Barcelona</p>
     </header>
 
-    <section id="convocatoria">
+    <main>
+        <section class="resumen">
+            <h2>Último Partido - Inter de Verdun B</h2>
+            <div class="resumen-card">
+                <h3>⚽ F.C. Rio Ebrio 0 - 5 Inter de Verdun B</h3>
+                <ul>
+                    <li>🔥 14’ Sopas D.</li>
+                    <li>💥 16’ El Porras D.</li>
+                    <li>⚡ 27’ Grizzi M.</li>
+                    <li>⚔️ 27’ Rony M.</li>
+                    <li>🎯 45’ Pablo P. (Primer gol de la temporada)</li>
+                </ul>
+                <p class="resumen-info">Portería a cero. Dominio total. Doble golpe en el 27'.</p>
+            </div>
+        </section>
+
+        <section class="liga">
+            <h2>Calendario y Clasificación</h2>
+            <p><a href="https://apuntamelo.com/grupo/2/504/2/1847/0" target="_blank">🅰️ Inter de Verdun A - Ver en Apúntamelo</a></p>
+            <p><a href="https://apuntamelo.com/grupo/2/588/2/2434/0" target="_blank">🅱️ Inter de Verdun B - Ver en Apúntamelo</a></p>
+        </section>
+
+        <section class="alineaciones">
+            <h2>Mejores Alineaciones</h2>
+            <p>Formación 2-3-1 habitual con rotaciones. Se destacan:</p>
+            <ul>
+                <li>🔝 El Porras (Delantero)</li>
+                <li>🧠 Suvillika (Medio)</li>
+                <li>🛡️ Xavi y Raúl (Defensa)</li>
+            </ul>
+        </section>
+
+        <section class="goleadores">
+            <h2>Estadísticas</h2>
+            <p><strong>Goles:</strong> El Porras (5), Pomares (2), Mordí (1)</p>
+            <p><strong>Asistencias:</strong> Adri (4), Dani (3), Sofo (2)</p>
+        </section>
+
+        <section class="equipo">
+            <h2>Inter de Verdun B</h2>
+            <p>Sección dedicada al equipo B. Pronto más detalles, convocatorias y noticias.</p>
+        </section>
+    
+    <section class="convocatoria">
         <h2>Convocatoria</h2>
-        <div class="convocatoria-bloque">Cargando convocatoria...
-            <h3>TITULARES</h3>
-            <ul>
-                <li><strong>99 MORDILLO</strong> (El Puma de Verdun)</li>
-                <li><strong>2 POMS</strong> (El rubio)</li>
-                <li><strong>25 RAÚL</strong> (american stanford)</li>
-                <li><strong>98 VILLA</strong> (Elrubiopatapalo)</li>
-                <li><strong>10 DANI</strong> (D10S)</li>
-                <li><strong>5 ARM</strong> (ODOVon)</li>
-                <li><strong>69 DELRIO JR</strong></li>
-            </ul>
-            <h3>SUPLENTES</h3>
-            <ul>
-                <li><strong>E77 PABS</strong></li>
-                <li><strong>69 SALO</strong></li>
-                <li><strong>14 ALAN</strong></li>
-            </ul>
-            <p><strong>DT:</strong> DLF</p>
-            <p><strong>PRESIDENTE:</strong> EL PORRAS DE VERDUN</p>
-            <div class="lema">FUERZA Y HONOR</div>
-        </div>
+        <textarea id="convocatoriaText" placeholder="Escribe la convocatoria aquí..."></textarea>
+        <button onclick="guardarConvocatoria()">Guardar</button>
+        <div id="convocatoriaPreview"></div>
     </section>
 
-    <section id="galeria">
-        <h2>Galería Multimedia</h2>
-        <div class="galeria-fotos">
-            <img src="assets/gallery/foto1.jpg" alt="Foto del equipo 1">
-            <img src="assets/gallery/foto2.jpg" alt="Foto del equipo 2">
-            <img src="assets/gallery/foto3.jpg" alt="Foto del equipo 3">
-        </div>
-        <div class="galeria-videos">
-            <h3>Vídeos destacados</h3>
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/1G4isv_Fylg" frameborder="0" allowfullscreen></iframe>
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/Xp2l9lm7X7A" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <section class="app-movil">
+        <h2>📱 Instala la App</h2>
+        <p>Agrega esta web a tu pantalla de inicio desde el navegador para instalarla como app.</p>
+        <button onclick="promptInstalacion()">Instalar App</button>
     </section>
+
+    <section class="instagram">
+        <h2>📸 Síguenos en Instagram</h2>
+        <p><a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
+    </section>
+    </main>
+    
 
     <footer>
-        <p>&copy; 2025 Inter de Verdun</p>
+        <p>© 2025 Inter de Verdun | Fuerza y honor</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
