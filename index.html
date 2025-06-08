@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inter de Verdun</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" type="image/png" href="escudo.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inter de Verdun B</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="escudo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Inter de Verdun</h1>
-    <p>Fuerza y honor</p>
+    <h1>Inter de Verdun B</h1>
+    <p id="fraseMotivadora"></p>
+    <a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a>
   </header>
 
-  <section id="formacion">
-    <h2>Formación táctica (2-3-1)</h2>
-    <div id="campo">
-      <div class="jugador" contenteditable="true">99 Mordí</div>
-      <div class="jugador" contenteditable="true">2 Pomares</div>
-      <div class="jugador" contenteditable="true">7 Suvillika</div>
-      <div class="jugador" contenteditable="true">10 Dani</div>
-      <div class="jugador" contenteditable="true">15 Xavi</div>
-      <div class="jugador" contenteditable="true">4 El Porras</div>
-    </div>
-  </section>
+  <main>
+    <section id="pinAcceso">
+      <h2>Acceso del Míster</h2>
+      <input type="password" id="pinInput" placeholder="PIN" />
+      <button onclick="validarPIN()">Entrar</button>
+    </section>
 
-  <section id="calendario">
-    <h2>Calendario</h2>
-    <ul>
-      <li><a href="https://apuntamelo.com/grupo/2/504/2/1847/0" target="_blank">Partidos Inter de Verdun A</a></li>
-      <li><a href="https://apuntamelo.com/grupo/2/588/2/2434/0" target="_blank">Partidos Inter de Verdun B</a></li>
-    </ul>
-  </section>
+    <section id="formacion" class="privado">
+      <h2>Formación (2-3-1)</h2>
+      <div id="campo"></div>
+    </section>
 
-  <section id="convocatorias">
-    <h2>Convocatorias</h2>
-    <textarea id="convocatoriaInput" placeholder="Escribe aquí la convocatoria..."></textarea>
-    <button onclick="guardarConvocatoria()">Guardar (solo admin)</button>
-  </section>
+    <section id="convocatoria" class="privado">
+      <h2>Convocatoria</h2>
+      <textarea id="convocatoriaTexto"></textarea>
+      <button onclick="guardarConvocatoria()">Guardar</button>
+    </section>
 
-  <section id="mvp">
-    <h2>Votación MVP</h2>
-    <input type="text" id="nombreMVP" placeholder="Jugador MVP"/>
-    <button onclick="votarMVP()">Votar</button>
-    <p id="mvpResultado"></p>
-  </section>
+    <section id="asistencia">
+      <h2>Asistencia</h2>
+      <form onsubmit="registrarAsistencia(event)">
+        <input type="text" id="nombreJugador" placeholder="Jugador" required />
+        <select id="respuestaAsistencia">
+          <option value="sí">Sí</option>
+          <option value="no">No</option>
+          <option value="tarde">Tarde</option>
+        </select>
+        <button>Confirmar</button>
+      </form>
+      <ul id="listaAsistencia"></ul>
+    </section>
 
-  <section id="historial">
-    <h2>Historial de Partidos</h2>
-    <ul id="listaHistorial">
-      <li>31/05: Inter 6 - 4 CF Valldaura | Goles: Porras(4), Pomares(2) | MVP: Porras</li>
-    </ul>
-  </section>
+    <section id="mvp">
+      <h2>MVP del Partido</h2>
+      <input type="text" id="nombreMVP" placeholder="Nombre" />
+      <button onclick="votarMVP()">Votar</button>
+      <ul id="rankingMVP"></ul>
+    </section>
 
-  <section id="frases">
-    <h2>Frase Motivadora</h2>
-    <blockquote id="fraseMotivadora">"La fuerza no proviene de la victoria, sino del esfuerzo constante."</blockquote>
-  </section>
+    <section id="estadisticas" class="privado">
+      <h2>Estadísticas por Jugador</h2>
+      <div id="editorEstadisticas"></div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="historial" class="privado">
+      <h2>Historial de Partidos</h2>
+      <ul id="listaHistorial"></ul>
+      <button onclick="agregarPartido()">Agregar Partido</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by Inter de Verdun • Desplegado con ❤️ en GitHub Pages</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
 </body>
 </html>
