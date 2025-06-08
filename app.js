@@ -1,1 +1,0 @@
-// JS principal en preparación para convocatorias, MVP y campo táctico
