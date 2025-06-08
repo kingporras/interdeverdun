@@ -1,19 +1,21 @@
 
 {
-  "name": "Inter de Verdun",
-  "short_name": "Verdun",
+  "name": "Inter de Verdun B",
+  "short_name": "Inter B",
+  "description": "La app oficial del Inter de Verdun B. ¡Fuerza y honor!",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#a8dadc",
-  "theme_color": "#003049",
+  "background_color": "#f2f6fa",
+  "theme_color": "#0288d1",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "assets/icon-192.png",
+      "src": "assets/escudo_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/icon-512.png",
+      "src": "assets/escudo_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
