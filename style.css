@@ -192,4 +192,65 @@ footer a {
   color: #0288d1;
   text-decoration: none;
 }
-  
+
+/* ------------------ CONVOCATORIA PRO ------------------ */
+
+#convocatoria {
+  margin: 2rem auto;
+  max-width: 600px;
+  background: #ffffffd8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+#convocatoria h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #0288d1;
+  margin-bottom: 1rem;
+}
+
+#convocatoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#convocatoria li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #333;
+}
+
+#convocatoria input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#convocatoria input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+#convocatoria button {
+  display: block;
+  margin: 1.2rem auto 0 auto;
+  background: #0288d1;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#convocatoria button:hover {
+  background: #0277bd;
+}
