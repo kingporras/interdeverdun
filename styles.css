@@ -1,1 +1,153 @@
-body { background: #f1f5f9; font-family: Arial; }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f6fa;
+  color: #333;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* Cabecera */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Login PIN */
+#login-section {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#login-section input {
+  padding: 0.6rem;
+  margin: 0.5rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-section button {
+  padding: 0.6rem 1rem;
+  background: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Perfiles */
+#perfiles {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.perfil {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.perfil h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.perfil p {
+  margin: 0.2rem 0;
+}
+
+/* Inputs para estadísticas */
+.stats-edit input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.stats-edit label {
+  display: inline-block;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* Botones */
+.perfil button {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editarBtn {
+  background-color: #ffa000;
+  color: white;
+}
+
+.guardarBtn {
+  background-color: #43a047;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toast para feedback */
+.toast {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0288d1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #0288d1;
+  text-decoration: none;
+}
