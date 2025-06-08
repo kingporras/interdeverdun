@@ -1,79 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inter de Verdun B</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="escudo.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/escudo.png" />
+  <meta name="theme-color" content="#0288d1" />
 </head>
 <body>
   <header>
     <h1>Inter de Verdun B</h1>
-    <p id="fraseMotivadora"></p>
-    <a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a>
+    <p class="subtitulo">¡Fuerza y honor!</p>
   </header>
 
   <main>
-    <section id="pinAcceso">
-      <h2>Acceso del Míster</h2>
-      <input type="password" id="pinInput" placeholder="PIN" />
-      <button onclick="validarPIN()">Entrar</button>
-    </section>
-
-    <section id="formacion" class="privado">
-      <h2>Formación (2-3-1)</h2>
-      <div id="campo"></div>
-    </section>
-
-    <section id="convocatoria" class="privado">
-      <h2>Convocatoria</h2>
-      <textarea id="convocatoriaTexto"></textarea>
-      <button onclick="guardarConvocatoria()">Guardar</button>
-    </section>
-
-    <section id="asistencia">
-      <h2>Asistencia</h2>
-      <form onsubmit="registrarAsistencia(event)">
-        <input type="text" id="nombreJugador" placeholder="Jugador" required />
-        <select id="respuestaAsistencia">
-          <option value="sí">Sí</option>
-          <option value="no">No</option>
-          <option value="tarde">Tarde</option>
-        </select>
-        <button>Confirmar</button>
-      </form>
-      <ul id="listaAsistencia"></ul>
-    </section>
-
-    <section id="mvp">
-      <h2>MVP del Partido</h2>
-      <input type="text" id="nombreMVP" placeholder="Nombre" />
-      <button onclick="votarMVP()">Votar</button>
-      <ul id="rankingMVP"></ul>
-    </section>
-
-    <section id="estadisticas" class="privado">
-      <h2>Estadísticas por Jugador</h2>
-      <div id="editorEstadisticas"></div>
-    </section>
-
-    <section id="historial" class="privado">
-      <h2>Historial de Partidos</h2>
-      <ul id="listaHistorial"></ul>
-      <button onclick="agregarPartido()">Agregar Partido</button>
+    <section id="login-section">
+      <h2>Acceso para entrenadores</h2>
+      <input type="password" id="pin" placeholder="Introduce el PIN" />
+      <button onclick="autenticar()">Entrar</button>
     </section>
   </main>
 
   <footer>
-    <p>Powered by Inter de Verdun • Desplegado con ❤️ en GitHub Pages</p>
+    <p>📸 Síguenos en <a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
+    <p>⚽ Powered by Inter de Verdun · Deploy via GitHub Pages</p>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <!-- Scripts -->
+  <script type="module" src="js/perfiles.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
+    function autenticar() {
+      const pin = document.getElementById('pin').value;
+      if (pin === "2000") {
+        localStorage.setItem("autorizado", "true");
+        location.reload();
+      } else {
+        alert("PIN incorrecto");
+      }
+    }
+
+    if (localStorage.getItem("autorizado") === "true") {
+      document.getElementById("login-section").style.display = "none";
+    }
+  </script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("✅ Service Worker registrado"))
+        .catch(err => console.error("Error en Service Worker:", err));
     }
   </script>
 </body>
