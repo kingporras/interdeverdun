@@ -1,88 +1,153 @@
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f8fa;
-  color: #1a1a1a;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f6fa;
+  color: #333;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* Cabecera */
 header {
-  background-color: #b2ebf2;
-  padding: 20px;
   text-align: center;
-  color: #003f5c;
-  border-bottom: 4px solid #0288d1;
+  margin-bottom: 2rem;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-header p {
-  font-style: italic;
-  font-size: 1.2em;
-}
-
-section {
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-h2 {
+  font-size: 2.5rem;
   color: #0288d1;
-  margin-bottom: 10px;
 }
 
-#campo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  background: #e0f7fa;
-  padding: 15px;
-  border-radius: 8px;
-  justify-content: center;
+.subtitulo {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #555;
 }
 
-.jugador {
-  background: #ffffff;
-  border: 2px solid #0288d1;
-  padding: 10px 15px;
-  border-radius: 6px;
-  min-width: 100px;
+/* Login PIN */
+#login-section {
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
-  cursor: pointer;
 }
 
-textarea {
-  width: 100%;
-  min-height: 100px;
-  padding: 10px;
-  font-size: 1em;
-  border-radius: 6px;
-  border: 1px solid #bbb;
-  resize: vertical;
+#login-section input {
+  padding: 0.6rem;
+  margin: 0.5rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-button {
-  background-color: #0288d1;
+#login-section button {
+  padding: 0.6rem 1rem;
+  background: #0288d1;
   color: white;
   border: none;
-  padding: 10px 16px;
-  margin-top: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0277bd;
+/* Perfiles */
+#perfiles {
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
-blockquote {
-  background: #e1f5fe;
-  border-left: 5px solid #0288d1;
-  margin: 0;
-  padding: 10px 15px;
-  font-style: italic;
+.perfil {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.perfil h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.perfil p {
+  margin: 0.2rem 0;
+}
+
+/* Inputs para estadísticas */
+.stats-edit input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.stats-edit label {
+  display: inline-block;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* Botones */
+.perfil button {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editarBtn {
+  background-color: #ffa000;
+  color: white;
+}
+
+.guardarBtn {
+  background-color: #43a047;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toast para feedback */
+.toast {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0288d1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #0288d1;
+  text-decoration: none;
 }
