@@ -7,10 +7,12 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f2f6fa;
-  color: #333;
+  background: #e0f7fa url("assets/escudo_512x512.png") no-repeat center center fixed;
+  background-size: 280px;
+  color: #222;
   padding: 1rem;
   min-height: 100vh;
+  backdrop-filter: brightness(1.05);
 }
 
 /* Cabecera */
