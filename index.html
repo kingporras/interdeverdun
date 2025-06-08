@@ -13,6 +13,14 @@
   <header>
     <h1>Inter de Verdun B</h1>
     <p class="subtitulo">¡Fuerza y honor!</p>
+    <script type="module" src="js/jugadores-data.js"></script>
+<script type="module" src="js/perfiles.js"></script>
+<script type="module" src="js/convocatorias.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
   </header>
 
   <main>
@@ -22,7 +30,13 @@
       <button onclick="autenticar()">Entrar</button>
     </section>
   </main>
+<section id="convocatoria"></section>
+<section id="perfiles"></section>
 
+<footer>
+  <p>📸 Síguenos en <a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
+  <p>⚽ Powered by Inter de Verdun · Deploy via GitHub Pages</p>
+  
   <footer>
     <p>📸 Síguenos en <a href="https://instagram.com/interdeverdunbcn" target="_blank">@interdeverdunbcn</a></p>
     <p>⚽ Powered by Inter de Verdun · Deploy via GitHub Pages</p>
