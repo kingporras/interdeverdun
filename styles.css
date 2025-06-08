@@ -17,22 +17,25 @@ body {
 
 /* Cabecera */
 header {
+  background-color: #0288d1;
+  color: white;
+  padding: 1.5rem 1rem;
   text-align: center;
+  border-radius: 6px;
   margin-bottom: 2rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #0288d1;
+  margin: 0;
+  font-size: 2.2rem;
 }
 
 .subtitulo {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  color: #555;
+  font-size: 1rem;
+  color: #e0f7fa;
 }
 
-/* Login PIN */
+/* Login */
 #login-section {
   max-width: 400px;
   margin: 0 auto;
@@ -63,7 +66,7 @@ header h1 {
 }
 
 .perfil {
-  background: #ffffff;
+  background: #ffffffd0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   padding: 1rem;
@@ -88,7 +91,6 @@ header h1 {
   margin: 0.2rem 0;
 }
 
-/* Inputs para estadísticas */
 .stats-edit input[type="number"] {
   width: 60px;
   padding: 0.3rem;
@@ -104,13 +106,13 @@ header h1 {
   font-size: 0.9rem;
 }
 
-/* Botones */
 .perfil button {
   margin-top: 0.6rem;
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .editarBtn {
@@ -127,7 +129,7 @@ header h1 {
   display: none;
 }
 
-/* Toast para feedback */
+/* Toast */
 .toast {
   position: fixed;
   bottom: 10px;
@@ -141,15 +143,53 @@ header h1 {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+/* Convocatoria */
+#convocatoria {
+  margin: 2rem auto;
+  max-width: 500px;
+  background: #ffffffc5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#convocatoria h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#convocatoria ul {
+  list-style: none;
+  padding: 0;
+}
+
+#convocatoria li {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+#convocatoria button {
+  margin-top: 1rem;
+  background: #0288d1;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Footer */
 footer {
   margin-top: 3rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
 }
 
 footer a {
   color: #0288d1;
   text-decoration: none;
 }
+  
