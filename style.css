@@ -254,3 +254,60 @@ footer a {
 #convocatoria button:hover {
   background: #0277bd;
 }
+/* ------------------ MVP DEL PARTIDO ------------------ */
+
+#mvp {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #ffffffda;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+#mvp h2 {
+  text-align: center;
+  color: #0288d1;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#mvp ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mvp li {
+  padding: 0.6rem 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mvp li strong {
+  font-weight: 600;
+  color: #333;
+}
+
+#mvp li span {
+  font-size: 0.95rem;
+  color: #666;
+  margin-left: 1rem;
+}
+
+#mvp button {
+  background: #0288d1;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+#mvp button:hover {
+  background: #0277bd;
+}
